@@ -1,0 +1,12 @@
+{
+  "llm": {
+    "backend": "openai",
+    "baseUrl": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "apiKey": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  "weixin": {
+    "enabled": false,
+    "accounts": {}
+  }
+}

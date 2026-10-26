@@ -1,0 +1,43 @@
+# ===== 依赖 =====
+node_modules/
+gui/node_modules/
+
+# ===== 本地数据（绝不入库：数据库 / 模型缓存 / LLM 缓存 / 上传暂存）=====
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# ===== 敏感配置（真实密钥与 token，只提交 .example）=====
+.env
+.env.local
+config.json
+
+# ===== 构建产物 =====
+gui/dist/
+dist/
+build/
+
+# ===== 本地工具链（Rust / 模型，体积巨大）=====
+tools/
+.cargo/
+rustup/
+
+# ===== 日志与临时文件 =====
+*.log
+logs/
+npm-debug.log*
+vite-out.log
+vite-err.log
+test-static.js
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ===== 旧文档归档（保留在主仓库之外）=====
+archive/

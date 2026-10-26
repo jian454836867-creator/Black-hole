@@ -1,0 +1,32 @@
+{
+  "name": "black-hole",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "本地黑盒知识库：投喂 + 提问，AI 后台静默消化并发现跨时空观点碰撞",
+  "keywords": ["local-first", "rag", "knowledge-base", "sqlite-vec", "claim-relations"],
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server/api.js",
+    "serve:web": "node src/server/static.js",
+    "dev:web": "node gui/node_modules/vite/bin/vite.js --host 127.0.0.1 --port 5173",
+    "build:web": "node gui/node_modules/vite/bin/vite.js build",
+    "seed": "node scripts/seed.js",
+    "smoke:db": "node scripts/smoke-db.js",
+    "smoke:relations": "node scripts/smoke-relations.js",
+    "smoke:migration": "node scripts/smoke-db-migration.js",
+    "smoke:weixin": "node scripts/smoke-weixin.js",
+    "verify:step1": "node scripts/verify-step1.js",
+    "verify:step3": "node scripts/verify-step3.js",
+    "e2e:step2": "node scripts/e2e-step2.js",
+    "weixin:login": "node src/bridges/weixin.js login",
+    "cleanup": "node scripts/cleanup.js"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.1",
+    "@tencent-weixin/openclaw-weixin": "^2.4.10",
+    "better-sqlite3": "^13.0.3",
+    "json-bigint": "^1.0.0",
+    "sqlite-vec": "^0.1.9"
+  }
+}
