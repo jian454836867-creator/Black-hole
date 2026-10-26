@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const DATA_DIR = path.resolve(__dirname, '../../data');
-export const DB_PATH = process.env.DB_PATH || path.join(DATA_DIR, 'openclaw-mini.db');
+export const DB_PATH = process.env.DB_PATH || path.join(DATA_DIR, 'black-hole.db');
 
 let _db = null;
 

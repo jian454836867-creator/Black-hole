@@ -1,4 +1,4 @@
--- OpenClaw Mini 本地黑盒知识库 — 5 张核心表
+-- Black hole 本地黑盒知识库 — 5 张核心表
 -- 1. 原始素材表 (不可变，溯源用)
 CREATE TABLE IF NOT EXISTS raw_files (
     id TEXT PRIMARY KEY,

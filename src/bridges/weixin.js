@@ -1,5 +1,5 @@
-// Step 5 · 微信 iLink 桥（openclaw-mini）
-// 协议完全对齐官方 @tencent-weixin/openclaw-weixin 包（v2.4.10 已装在本机 node_modules）：
+// Step 5 · 微信 iLink 桥（Black hole）
+// 协议端点取自官方 @tencent-weixin/openclaw-weixin 包（v2.4.10 已装在本机 node_modules，仅参考其协议，产品已改名 Black hole）：
 //   - 服务端 https://ilinkai.weixin.qq.com，JSON-over-HTTP 长轮询（非 WebSocket）
 //   - 登录：POST /ilink/bot/get_bot_qrcode?bot_type=3 → { qrcode, qrcode_img_content }
 //           GET  /ilink/bot/get_qrcode_status?qrcode=...（35s 长轮询）→ wait/scaned/confirmed/expired...
@@ -19,7 +19,7 @@ import { onInsightCreated } from '../pipeline/ingest.js';
 import { isValuable } from '../pipeline/filter.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CONFIG_PATH = process.env.OPENCLAW_CONFIG || path.resolve(__dirname, '../../config.json');
+const CONFIG_PATH = process.env.BLACKHOLE_CONFIG || path.resolve(__dirname, '../../config.json');
 
 const ILINK_HOST = 'https://ilinkai.weixin.qq.com';
 const BOT_TYPE = '3';

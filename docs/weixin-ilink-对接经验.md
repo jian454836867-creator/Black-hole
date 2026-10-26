@@ -1,6 +1,6 @@
-# OpenClaw 飞书 / 微信对接经验总结
+# Black hole 飞书 / 微信对接经验总结
 
-> 项目：openclaw-mini（自建 mini OpenClaw，不依赖本地 OpenClaw Gateway，直连 DeepSeek）
+> 项目：Black hole（自建本地黑盒，不依赖本地 Gateway，直连 DeepSeek）
 > 时间：2026-10-25
 > 结论：飞书长连接、微信 iLink 协议均跑通端到端对话。客户端 exe 因环境限制未完成，经验沉淀如下。
 

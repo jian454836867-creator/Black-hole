@@ -20,7 +20,7 @@ Write-Host "  $log"
 
 Write-Host "=== 2/4 敏感信息复检 ===" -ForegroundColor Cyan
 $bad = @()
-foreach ($p in @('.env', 'config.json', 'data/openclaw-mini.db')) {
+foreach ($p in @('.env', 'config.json', 'data/black-hole.db')) {
   git ls-files --error-unmatch $p 2>$null | Out-Null
   if ($LASTEXITCODE -eq 0) { $bad += $p }
 }
